@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Le's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .header-content {
+            z-index: 1;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 40px;
+        }
+
+        .header-content h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+
+        .cotton-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        .cotton-btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #667db6;
+        }
+
+        section {
+            padding: 80px;
+            margin: 80px auto;
+            max-width: 1000px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #667db6;
+            text-align: center;
+        }
+
+        section h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        section ul {
+            margin-bottom: 40px;
+        }
+
+        section li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="header-content">
+            <h1>Joseph Le's Portfolio</h1>
+            <p>Finance & Information Systems Student</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <a href="content.html" class="content-btn">Content</a>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects & Experience</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, my name is Joseph Le, and I'm a passionate student pursuing a degree in Finance and Information Systems at the University of Washington.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>I am currently enrolled at the University of Washington, pursuing a Bachelor's degree in Finance and Information Systems. My expected graduation date is Spring 2025.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects & Experience</h2>
+        <h4>Business Data Analyst | Python, Linear & Logistic Regression, CART</h4>
+        <p><em>03/2024 - Present</em></p>
+        <ul>
+            <li>Leveraged descriptive, predictive, & prescriptive data analytics to extract insights from large datasets related to nutrition and health trends in the United States.</li>
+            <li>Constructed statistical models, graphs, insights to illustrate and predict dietary habits and health indicators - identify correlations, trends, and patterns in consumer behavior and health outcomes.</li>
+        </ul>
+        <h4>Systems & Designs Analyst</h4>
+        <p><em>03/2024 - Present</em></p>
+        <ul>
+            <li>Developed redesigns of UW website & app to increase 15% user interface (UI) & 40% user experience (UX)</li>
+            <li>UW Husky ID card to apple wallet recommendation for easy campus building access - niche market product focus</li>
+            <li>Project management team collaboration - economic feasibility analysis, risk & opportunity identification, interpreting system requests & specifications, establishing activity sequences</li>
+        </ul>
+        <h4>Sigma Consultants Inc.</h4>
+        <p><em>01/2024 - 03/2024</em></p>
+        <h4>Project Management Consultant | ATS & AI, Financial Planning, Business Process Reengineering (BPR)</h4>
+        <ul>
+            <li>Provided 2 software recruitment software tools for Sigma Consultant's talent acquisition process to save 33% on job boards & increase productivity up to 40%, while to ensure clients receive candidates tailored to requirements</li>
+            <li>Developed Digital Marketing Strategy including online presence and B2B marketing plan - elevated strategic outreach for Portland, Oregon firm within the Pacific Northwest Information Technology Consulting community</li>
+            <li>Constructed financial analysis & strategic deliverables to promote 40% gross margin, 25% profit margin, & achieve a revenue growth to $5 million by 2027</li>
+        </ul>
+    </section>
+    <section id="interests">
+        <h2>Interests</h2>
+        <p>In my free time, I enjoy listening to and exploring the world of Electronic Dance Music (EDM). I'm also an avid weightlifter and dedicated to maintaining a healthy lifestyle.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via email at <a href="mailto:j0sephdkle2002@gmail.com">j0sephdkle2002@gmail.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 Joseph Le. All rights reserved.</p>
+    </footer>
+</body>
+</html>
